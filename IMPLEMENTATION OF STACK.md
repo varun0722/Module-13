@@ -28,4 +28,38 @@ To write a Python program to implement a stack using a list and its built-in met
 
 ```
 
+
+stack = []
+
+class Stack:
+    def push(self, items):
+        for i in items:
+            stack.append(i)
+
+    def pop(self):
+        if stack:
+            print("Element popped:", stack.pop())
+        else:
+            print("The stack is empty")
+
+    def peek(self):
+        print("Elements in the stack:\n", stack)
+
+# Create stack object
+s = Stack()
+
+# Input size and generate even numbers less than size
+size = int(input("Enter size: "))
+l = [i for i in range(1, size) if i % 2 == 0]
+
+# Push, peek, pop, and peek again
+s.push(l)
+s.peek()
+s.pop()
+s.peek()
 ```
+### OUTPUT
+![image](https://github.com/user-attachments/assets/8aee8dec-95e3-488d-9455-33b130c79fd8)
+
+### RESULT
+Thus the program to implement a stack using a list and its built-in methods has been implemented and executed successfully.
